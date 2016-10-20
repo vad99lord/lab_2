@@ -35,3 +35,19 @@
 # test_4
 # 1
 # 2
+
+
+def print_result(func):
+    def wrap_func():
+        print(func.__name__)
+        output = func()
+        if type(output) is dict:
+            for key, val in output.items():
+                print(key,' = ',val)
+        else:
+            if type(output) is list:
+                for x in output:
+                    print(x)
+            else:
+                print(output)
+    return wrap_func

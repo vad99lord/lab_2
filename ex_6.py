@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json
 import sys
-from librip.ctxmngrs import timer
+from librip.ctxmngrs import Timer
 from librip.decorators import print_result
 from librip.gens import field, gen_random
 from librip.iterators import Unique as unique
@@ -41,5 +41,5 @@ def f4(arg):
     raise NotImplemented
 
 
-with timer():
+with Timer():
     f4(f3(f2(f1(data))))

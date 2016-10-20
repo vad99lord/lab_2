@@ -1,5 +1,5 @@
 from time import sleep
-from librip.ctxmngrs import timer
+from librip.ctxmngrs import Timer
 
-with timer():
-    sleep(5.5)
+with Timer():
+    sleep(2.5)

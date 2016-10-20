@@ -8,4 +8,6 @@ goods = [
     {'title': 'Вешалка для одежды', 'price': 800, 'color': 'white'}
 ]
 
-# Реализация задания 1
+# Реализация задания
+print(*field(goods, 'title', 'price'), sep=', ')
+print(*field(goods,'title'), sep =', ')
